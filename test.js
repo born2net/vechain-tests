@@ -29,10 +29,7 @@
 }
  **/
 
-const thorify = require("thorify").thorify;
-const Web3 = require("web3");
-const web3 = new Web3();
-thorify(web3, "http://54.213.160.84:8546");
+const thorify = require("thorify").thorify;  const Web3 = require("web3"); const web3 = new Web3();  thorify(web3, "http://54.213.160.84:8546");
 
 // web3.eth.getBlock("latest").then(res => console.log(res));
 
