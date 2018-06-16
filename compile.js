@@ -13,13 +13,22 @@ const output = solc.compile(input.toString(), 1);
 const bytecode = output.contracts[":Token"].bytecode;
 const abi = JSON.parse(output.contracts[':Token'].interface);
 // const contract = web3.eth.Contract(abi);
-                   
+
 var contract = new web3.eth.Contract(abi, '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe', {
     from: '0xa60C92B6CD82c5Effe13764CE18f235E86c02efa', // default from address
     gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case
 });
 
-console.log(contract);
+
+// contract.increment().sendTransaction({from: eth.accounts[0]});
+//
+// var getData = myContract.increment.getData(function parameters);
+// finally paas this data parameter to send Transaction
+// web3.eth.sendTransaction({to:Contractaddress, from:Accountaddress, data: getData});
+
+
+
+// const contractInstance = contract.at(contractAddress)
 
 //
 // // Create a web3 connection to a running geth node over JSON-RPC running at

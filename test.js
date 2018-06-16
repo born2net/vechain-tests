@@ -39,16 +39,16 @@ const thorify = require("thorify").thorify;  const Web3 = require("web3"); const
 // });
 
 // privateKey: '0x36c59b342cb55ec102f5aad2475c5c619aaef1678a82d64e03a174905890c1f0',
-// web3.eth.getBalance("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", 'latest').then(result => {
-//     console.log('Account balance is: ' + result);
-// })
-// web3.eth.getEnergy("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", 'latest').then(result => {
-//     console.log('Account energy is: ' + result);
-// })
+web3.eth.getBalance("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", 'latest').then(result => {
+    console.log('Account balance is: ' + result);
+})
+web3.eth.getEnergy("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", 'latest').then(result => {
+    console.log('Account energy is: ' + result);
+})
 
-web3.eth.personal.unlockAccount("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", "123123").then(() => {
-    console.log('Account unlocked.');
-}).catch(console.error);
+// web3.eth.personal.unlockAccount("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", "123123").then(() => {
+//     console.log('Account unlocked.');
+// }).catch(console.error);
 
 
 // web3.eth.personal.unlockAccount("0xa60C92B6CD82c5Effe13764CE18f235E86c02efa", "xxxx",1000, function (error, result) {

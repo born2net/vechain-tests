@@ -7,6 +7,10 @@ contract Token {
         balances[msg.sender] = 1000000;
     }
 
+    function increment(){
+    
+    }
+
     function transfer(address _to, uint _amount) {
         if (balances[msg.sender] < _amount) {
             throw;
